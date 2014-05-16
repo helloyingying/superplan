@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.liu.superplan"
+    package="com.liu.planplus"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.liu.superplan.activity.LoadActivity"
+            android:name="com.liu.planplus.activity.LoadActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/app_name"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.liu.superplan.activity.MainActivity"
+            android:name="com.liu.planplus.activity.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
     </application>
