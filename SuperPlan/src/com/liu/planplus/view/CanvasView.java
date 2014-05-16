@@ -10,8 +10,10 @@ import android.graphics.Shader;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.FrameLayout;
 
-public class CanvasView  extends View {
+//添加ScrollView之后不显示的问题
+public class CanvasView  extends FrameLayout {
 	//定义画笔
 	private Paint paint = new Paint();
 	//得到屏幕的宽和高
@@ -50,11 +52,11 @@ public class CanvasView  extends View {
 		paint.setStrokeWidth(3);
 		
 		int deltheight = (height-100)/12;
-		canvas.drawLine(50, 0, 50, height - 100, paint);
-		for (int i = 1; i <= 12; i++)
-		{
-			canvas.drawLine(0, deltheight*i, width, deltheight*i, paint);
-		}
+		canvas.drawLine(0, 0, 1000, 1000, paint);
+//		for (int i = 1; i <= 12; i++)
+//		{
+//			canvas.drawLine(0, deltheight*i, width, deltheight*i, paint);
+//		}
 		/*
 		// 绘制圆形
 		canvas.drawCircle(40, 40, 30, paint);
