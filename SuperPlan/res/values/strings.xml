@@ -8,5 +8,9 @@
     <string name="moretitle">更多</string>
     <string name="plantitle">计划表</string>
     <string name="exit">"退出"</string>
+    <string name="back">"返回"</string>
     <string name="more">"更多"</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="hello_world">Hello world!</string>
+
 </resources>

@@ -13,7 +13,7 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 //添加ScrollView之后不显示的问题
-public class CanvasView  extends FrameLayout {
+public class CanvasView  extends View {
 	//定义画笔
 	private Paint paint = new Paint();
 	//得到屏幕的宽和高
@@ -47,12 +47,11 @@ public class CanvasView  extends FrameLayout {
 		// 去锯齿
 		paint.setAntiAlias(true);
 		//设置颜色
-		paint.setColor(Color.argb(255, 176,196,222));
+		paint.setColor(Color.argb(255, 0,0,0));
 		paint.setStyle(Paint.Style.STROKE);
 		paint.setStrokeWidth(3);
 		
-		int deltheight = (height-100)/12;
-		canvas.drawLine(0, 0, 1000, 1000, paint);
+		canvas.drawLine(100, 0, 100, 2000, paint);
 //		for (int i = 1; i <= 12; i++)
 //		{
 //			canvas.drawLine(0, deltheight*i, width, deltheight*i, paint);
@@ -177,6 +176,13 @@ public class CanvasView  extends FrameLayout {
 		canvas.drawText("三角形", 240, 325, paint);
 		canvas.drawText("五角形", 240, 390, paint);
 */
+	}
+
+	@Override
+	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+		// TODO Auto-generated method stub
+		super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+		setMeasuredDimension(2000, 2000);  
 	}
 
 	

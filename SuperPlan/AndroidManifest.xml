@@ -28,6 +28,10 @@
             android:name="com.liu.planplus.activity.MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name="com.liu.planplus.activity.MoreActivity"
+            android:label="@string/title_activity_more" >
+        </activity>
     </application>
 
 </manifest>
